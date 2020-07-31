@@ -5,6 +5,8 @@
     <h6 class="card-subtitle mb-2 text-muted">Programmiertes Entwerfen</h6>
     <p class="card-text">Plakat zum Thema XY</p>
     <a href="#" class="card-link">Steuer den Roboter an die Position des Plakats</a>
+     <button v-on:click="lichtAnschalten()" :disabled="!connected || !amIActive">Licht An</button>
+     <button v-on:click="lichtAusschalten()" :disabled="!connected || !amIActive">Licht Aus</button>
   </div>
   <div><xy/></div>
 </div>
